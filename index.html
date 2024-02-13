@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Invitation</title>
+</head>
+<body>
+    <div class="invitation">
+        <h1>Will You Be My Valentine?</h1>
+        <p> I'm here to abduct you into the world of love,to the garden of purple roses, where whispers of eternity dance, I pledge my heart's song to you, my beloved, as timeless as the stars, as tender as a dew-kissed rose,Would you honor me with your presence?</p>
+        <a href="#" class="btn" onclick="reply()">Yes, I'd love to!</a>
+        <p>or</p>
+        <a href="#" class="btn" id="noButton">No, I can't...</a>
+    </div>
+    
+    <script>
+        function reply() {
+            alert("Dapat Lang!");
+        }
+    
+        document.getElementById("noButton").addEventListener("click", function() {
+            var cuteAsk = confirm("Oh, how the heart yearns for your presence, please please pleaseeeeee! Would you reconsider?");
+            if (cuteAsk) {
+                alert("Wooohooooo! Thank you.");
+            } else {
+                alert("Say yes you stupid !!!");
+            }
+        });
+    </script>
+</body>
+</html>
